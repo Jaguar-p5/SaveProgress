@@ -10,7 +10,7 @@ size(400, 400)
   bob = new Player(lines[0], lines[0], 50);
   ents = new ArrayList <Entity>();
   ents.add(bob);
-  String[] newLines = {"" + ((int(lines[0])+50))%400};
+  String[] newLines = {"" + (((int)(lines[0])+50))%400)};
   saveStrings("progress.txt", newLines);
 }
 void draw(){
