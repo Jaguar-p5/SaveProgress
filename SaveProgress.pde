@@ -7,14 +7,12 @@ size(400, 400)
   ellipse(100,100,100,100);
   textSize(48);
   textAlign(CENTER,CENTER);
+  String[] lines  = loadStrings("progress.txt");
   
-  
-  bob = new Player(250, 250, 50);
+  bob = new Player(lines[0], lines[0], 50);
   ents = new ArrayList <Entity>();
   ents.add(bob);
-  String[] lines  = loadStrings("progress.txt");
-  text(lines[0],50,50);
-  String[] newLines = {"" + (int(lines[0])+1)};
+  String[] newLines = {"" + ((int(lines[0])+50))%400};
   saveStrings("progress.txt", newLines);
 }
 void draw(){
