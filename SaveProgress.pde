@@ -6,7 +6,7 @@ size(400, 400)
   textSize(48);
   textAlign(CENTER,CENTER);
   String[] lines  = loadStrings("progress.txt");
-  
+  text(lines[0], 200, 200);
   bob = new Player(Integer.parseInt(lines[0]), Integer.parseInt(lines[0]), 50);
   ents = new ArrayList <Entity>();
   ents.add(bob);
