@@ -10,10 +10,10 @@ size(400, 400)
   bob = new Player( 200, 200, 50);
   ents = new ArrayList <Entity>();
   ents.add(bob);
-  String[] newLines = {"" + ( bob.myX ) } ;
-  saveStrings("progress.txt", newLines);
 }
 void draw(){
+  String[] newLines = {"" + ( bob.myX ) } ;
+  saveStrings("progress.txt", newLines);
  background(111);
  for(int i = 0; i < ents.size(); i++){
  ents.get(i).doStuff(); 
