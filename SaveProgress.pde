@@ -2,7 +2,7 @@
 Player bob;
 ArrayList <Entity> ents;
 public void setup() {
-size(400, 400)
+size(400, 400);
   textSize(48);
   textAlign(CENTER,CENTER);
   String[] lines  = loadStrings("progress.txt");
